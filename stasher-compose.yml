@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  db:
+    image: gwaewion/couchdb:latest
+
+  stasher:
+    build: ./stasher
+    depends_on:
+      - db
+    ports: 
+      - "8081:8080"

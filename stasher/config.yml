@@ -1,0 +1,13 @@
+stasher:
+  address: "0.0.0.0"
+  port: "8080"
+  salt: "longAndSecureSalt"
+  hostname: "127.0.0.1:8081"
+couchdb:
+  protocol: "https"
+  address: "db"
+  port: "6984"
+  dbname: "stasher"
+  username: "stasher"
+  password: "stasher"
+  cert_check: false
